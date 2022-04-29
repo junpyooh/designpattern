@@ -1,4 +1,6 @@
-package factoryMethod.badEx;
+package factoryMethod.typeExample;
+
+import factoryMethod.typeExample.applyFactory.ClassA;
 
 public class Client {
     public static void main(String[] arg) {
