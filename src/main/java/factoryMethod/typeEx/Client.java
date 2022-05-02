@@ -1,6 +1,6 @@
-package factoryMethod.typeExample;
+package factoryMethod.typeEx;
 
-import factoryMethod.typeExample.applyFactory.ClassA;
+import factoryMethod.typeEx.applyFactory.ClassA;
 
 public class Client {
     public static void main(String[] arg) {
