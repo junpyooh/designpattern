@@ -1,4 +1,4 @@
-package factoryMethod.typeExample.type;
+package factoryMethod.typeEx.type;
 
 public class TypeA extends Type {
     public TypeA(){

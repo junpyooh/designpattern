@@ -19,5 +19,9 @@
      - 결합도 : 한 클래스에 변경점이 얼마나 다른 클래스에 영향을 끼치는 정도
      
 ---
-### 예시
-<img src="/Users/camel/IdeaProjects/designpattern/src/main/resources/image/classDiagram.png"></img>
+### 팩토리 메소드 패턴 구조
+<img src="/Users/camel/IdeaProjects/designpattern/src/main/resources/image/classDiagram_1.png"></img>
+
+---
+### 팩토리 메소드 패턴 예제
+<img src="/Users/camel/IdeaProjects/designpattern/src/main/resources/image/classDiagram_2.png"></img>

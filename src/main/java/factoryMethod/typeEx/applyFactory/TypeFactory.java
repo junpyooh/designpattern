@@ -1,11 +1,11 @@
-package factoryMethod.typeExample.unapplyFactory;
+package factoryMethod.typeEx.applyFactory;
 
-import factoryMethod.typeExample.type.Type;
-import factoryMethod.typeExample.type.TypeA;
-import factoryMethod.typeExample.type.TypeB;
-import factoryMethod.typeExample.type.TypeC;
+import factoryMethod.typeEx.type.Type;
+import factoryMethod.typeEx.type.TypeA;
+import factoryMethod.typeEx.type.TypeB;
+import factoryMethod.typeEx.type.TypeC;
 
-public class ClassA {
+public class TypeFactory {
     public Type createType(String type) {
         Type returnType = null;
         switch (type){

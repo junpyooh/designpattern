@@ -1,6 +1,6 @@
-package factoryMethod.typeExample.applyFactory;
+package factoryMethod.typeEx.applyFactory;
 
-import factoryMethod.typeExample.type.Type;
+import factoryMethod.typeEx.type.Type;
 
 public class ClassA {
     public Type createType(String type){
