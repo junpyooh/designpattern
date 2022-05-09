@@ -25,7 +25,6 @@
   - Client에서 Car를 직접 생성하지 않고 CarFactory를 통해서 생성
 
 <img src="/Users/camel/IdeaProjects/designpattern/src/main/resources/image/classDiagram_1.png"></img>
-
 ---
 
 ### Abstract Factory Pattern
@@ -43,3 +42,46 @@
    - OS 환경에 따라 버튼과 알람 형태를 다르게 정의하는 예제에 추상 팩토리 패턴 적용
 
 <img src="/Users/camel/IdeaProjects/designpattern/src/main/resources/image/classDiagram_2.png"></img>
+- 코드
+```java
+public interface ThemeFactory {
+    Button createButton();
+    Alarm createAlarm();
+}
+
+public class MacOSThemeFactory implements ThemeFactory {
+
+    @Override
+    public Button createButton() {
+        return new MacOSButton();
+    }
+
+    @Override
+    public Alarm createAlarm() {
+        return new MacOSAlarm();
+    }
+}
+
+public class WindowsThemeFactory implements ThemeFactory {
+
+    @Override
+    public Button createButton() {
+        return new WindowsButton();
+    }
+
+    @Override
+    public Alarm createAlarm() {
+        return new WindowsAlarm();
+    }
+}
+```
+```java
+public interface Button {}
+public class MacOSButton implements Button {}
+public class WindowsButton implements Button {}
+```
+```java
+public interface Alarm {}
+public class MacOSAlarm implements Alarm {}
+public class WindowsAlarm implements Alarm {}
+```
